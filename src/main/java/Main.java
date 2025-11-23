@@ -19,6 +19,9 @@ public class Main {
             case "add":
                 IndexUtil indexUtil = new IndexUtil();
                 indexUtil.createIndex(rootDir);
+                indexUtil.deleteFoldersThatWasDeleted();
+                System.out.println(indexUtil.indexHashMap);
+                System.out.println(indexUtil.indexHashMap.keySet().size());
                 break;
             case "commit":
                 break;

@@ -31,11 +31,7 @@ public class HashFolders {
                 Util.createFolder(indexHashNameFilePath);
             }
         }
-        if (!hashes.isEmpty()){
-            return Util.hashFolder(hashes);
-        }else{
-            return  null;
-        }
+       return null;
 
     }
 
